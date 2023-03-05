@@ -1,0 +1,9 @@
+micronaut:
+  application:
+    instance: ${random.uuid}
+    version: 0.1
+  router:
+    static-resources:
+      swagger:
+        mapping: /api/**
+        paths: classpath:META-INF/swagger
